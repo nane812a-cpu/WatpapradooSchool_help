@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>โรงเรียนวัดป่าประดู่ — School Map</title>
+  <meta name="description" content="แผนที่โรงเรียนวัดป่าประดู่ อำเภอเมืองระยอง จังหวัดระยอง" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+</head>
+<body>
+
+<!-- ── Navbar ──────────────────────────────────────────────── -->
+<nav class="navbar">
+  <a href="index.html" class="navbar-brand">
+    <img src="images/logo.png" alt="Logo โรงเรียนวัดป่าประดู่" onerror="this.style.display='none'" />
+    <div class="brand-text">
+      <span class="brand-th">โรงเรียนวัดป่าประดู่</span>
+      <span class="brand-en">Wat Pa Pradu School</span>
+    </div>
+  </a>
+  <ul class="navbar-links">
+    <li><a href="index.html" class="active">🏠 หน้าหลัก</a></li>
+    <li><a href="map.html">🗺️ แผนที่</a></li>
+    <li><a href="about.html">ℹ️ เกี่ยวกับ</a></li>
+    <li><a href="developer.html">👨‍💻 ผู้พัฒนา</a></li>
+    <li><a href="../memory-helper/index.html" class="nav-link-portal">📚 Memory Helper</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:8px">
+    <button class="theme-toggle" title="เปลี่ยนธีม">🌙</button>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="active">🏠 หน้าหลัก</a>
+  <a href="map.html">🗺️ แผนที่</a>
+  <a href="about.html">ℹ️ เกี่ยวกับโรงเรียน</a>
+  <a href="developer.html">👨‍💻 ผู้พัฒนา</a>
+  <a href="../memory-helper/index.html" class="mobile-link-portal">📚 Memory Helper</a>
+</div>
+
+<!-- ── Hero ────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-content">
+    <img src="images/logo.png" alt="ตราโรงเรียนวัดป่าประดู่" class="hero-logo"
+         onerror="this.style.background='#2e7d32';this.alt='WPP'" />
+    <div class="hero-badge">รหัสโรงเรียน 1021470222</div>
+    <h1>โรงเรียนวัดป่าประดู่</h1>
+    <h2>Wat Pa Pradu School · ระยอง</h2>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="number" data-count="7">7</div>
+        <div class="label">อาคารเรียน</div>
+      </div>
+      <div class="hero-stat">
+        <div class="number" data-count="104">104</div>
+        <div class="label">ปีที่ก่อตั้ง (2465)</div>
+      </div>
+      <div class="hero-stat">
+        <div class="number" data-count="30">30</div>
+        <div class="label">ชั้นเรียนรวม</div>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a href="map.html" class="btn btn-primary">🗺️ ดูแผนที่โรงเรียน</a>
+      <a href="about.html" class="btn btn-secondary">ℹ️ ข้อมูลโรงเรียน</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Quick Info ───────────────────────────────────────────── -->
+<section class="section-sm" style="background:var(--bg-card);border-bottom:1px solid var(--border)">
+  <div class="container">
+    <div class="info-grid">
+      <div class="info-item animate-up">
+        <span class="info-icon">📍</span>
+        <div>
+          <div class="info-label">ที่ตั้ง</div>
+          <div class="info-value">136 ถ.สุขุมวิท ต.ท่าประดู่ อ.เมืองระยอง จ.ระยอง 21000</div>
+        </div>
+      </div>
+      <div class="info-item animate-up">
+        <span class="info-icon">📞</span>
+        <div>
+          <div class="info-label">โทรศัพท์</div>
+          <div class="info-value">038-611320</div>
+        </div>
+      </div>
+      <div class="info-item animate-up">
+        <span class="info-icon">🏛️</span>
+        <div>
+          <div class="info-label">สังกัด</div>
+          <div class="info-value">สพม.ชลบุรี-ระยอง สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน</div>
+        </div>
+      </div>
+      <div class="info-item animate-up">
+        <span class="info-icon">📅</span>
+        <div>
+          <div class="info-label">ก่อตั้ง</div>
+          <div class="info-value">30 สิงหาคม พ.ศ. 2465</div>
+        </div>
+      </div>
+      <div class="info-item animate-up">
+        <span class="info-icon">🌐</span>
+        <div>
+          <div class="info-label">เว็บไซต์โรงเรียน</div>
+          <div class="info-value"><a href="https://www.watpa.ac.th/" target="_blank" rel="noopener noreferrer">www.watpa.ac.th</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Buildings Overview ───────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>อาคารทั้งหมดในโรงเรียน</h2>
+      <p>คลิกที่อาคารเพื่อดูรายละเอียดชั้นและห้องเรียน</p>
+      <div class="gold-line"></div>
+    </div>
+    <div class="card-grid" id="buildingCards"></div>
+  </div>
+</section>
+
+<!-- ── Map Preview ──────────────────────────────────────────── -->
+<section class="section-sm" style="background:var(--bg-card)">
+  <div class="container" style="text-align:center">
+    <div class="section-title">
+      <h2>แผนผังโรงเรียน</h2>
+      <p>แผนที่แบบโต้ตอบพร้อมค้นหาห้องเรียน</p>
+      <div class="gold-line"></div>
+    </div>
+    <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);max-width:800px;margin:0 auto 28px">
+      <img src="images/school-map.png" alt="แผนผังโรงเรียนวัดป่าประดู่"
+           style="width:100%;height:auto;display:block"
+           onerror="this.parentElement.style.display='none'" />
+    </div>
+    <a href="map.html" class="btn btn-primary" style="font-size:1rem;padding:14px 36px">
+      🗺️ เปิดแผนที่แบบโต้ตอบ
+    </a>
+  </div>
+</section>
+
+<!-- ── Room Types Legend ────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>ประเภทห้องเรียน</h2>
+      <div class="gold-line"></div>
+    </div>
+    <div id="roomTypeLegend" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center"></div>
+  </div>
+</section>
+
+<!-- ── Footer ──────────────────────────────────────────────────-->
+<footer>
+  <strong>โรงเรียนวัดป่าประดู่</strong> · 136 ถนนสุขุมวิท ต.ท่าประดู่ อ.เมืองระยอง จ.ระยอง 21000<br/>
+  โทร. <a href="tel:038611320">038-611320</a> · แฟกซ์ 038-614282<br/>
+  <small style="opacity:0.6">สพม.ชลบุรี-ระยอง · สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน · กระทรวงศึกษาธิการ</small>
+</footer>
+
+<!-- ── Scripts ─────────────────────────────────────────────── -->
+<script src="data/buildings.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  // Building cards
+  const grid = document.getElementById('buildingCards');
+  BUILDINGS.forEach(b => {
+    const totalRooms = b.floors.reduce((s, f) => s + f.rooms.length, 0);
+    const card = document.createElement('div');
+    card.className = 'building-card animate-up';
+    card.innerHTML = `
+      <div class="building-card-header" style="background:${b.color}">
+        <div class="b-icon">🏫</div>
+        <div>
+          <h3>${b.name}</h3>
+          <p>${b.nameEn}</p>
+        </div>
+      </div>
+      <div class="building-card-body">
+        <div class="floor-badges">
+          ${b.floors.map(f => `<span class="floor-badge">${f.label}</span>`).join('')}
+        </div>
+        <p class="room-count">📦 ${totalRooms} ห้อง · ${b.floors.length} ชั้น</p>
+      </div>
+    `;
+    card.addEventListener('click', () => {
+      window.location.href = `map.html?building=${b.id}`;
+    });
+    grid.appendChild(card);
+  });
+
+  // Room type legend
+  const legend = document.getElementById('roomTypeLegend');
+  Object.entries(ROOM_TYPES).forEach(([key, val]) => {
+    const badge = document.createElement('div');
+    badge.style.cssText = `
+      display:flex;align-items:center;gap:6px;
+      background:var(--bg-card);border:1px solid var(--border);
+      border-radius:50px;padding:6px 14px;font-size:0.82rem;
+      font-weight:600;color:var(--text);
+    `;
+    badge.innerHTML = `<span>${val.icon}</span><span style="color:${val.color}">${val.label}</span>`;
+    legend.appendChild(badge);
+  });
+
+});
+</script>
+</body>
+</html>
